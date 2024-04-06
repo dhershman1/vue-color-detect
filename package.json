@@ -1,0 +1,44 @@
+{
+  "name": "vue-color-detect",
+  "version": "1.0.0",
+  "module": "./dist/vue-color-detect.min.js",
+  "description": "A simple hook for detecting the color scheme a users browser is in",
+  "main": "index.js",
+  "type": "module",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "prepack": "npm run lint && npm run build",
+    "lint": "standard index.js",
+    "lint:fix": "standard --fix index.js"
+  },
+  "standard": {
+    "ignore": [
+      "dist/*",
+      "types/*"
+    ]
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "color",
+    "scheme",
+    "detector",
+    "detect",
+    "hook"
+  ],
+  "author": "Dustin Hershman<dustinh17@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.14.0",
+    "standard": "^17.1.0"
+  }
+}
