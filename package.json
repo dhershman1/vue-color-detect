@@ -1,6 +1,6 @@
 {
   "name": "vue-color-detect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "module": "./dist/vue-color-detect.min.js",
   "description": "A simple hook for detecting the color scheme a users browser is in",
   "main": "index.js",
